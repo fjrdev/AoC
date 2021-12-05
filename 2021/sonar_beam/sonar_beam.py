@@ -15,8 +15,7 @@ class sonar_beam():
 
     def algorithm(self, work_list) -> int:
 
-        inc_count = 0
-        prev_elem = 0
+        inc_count = prev_elem = 0
         for x in range(0, len(work_list)):
             if x > 0:
                 if prev_elem < work_list[x]:
@@ -27,12 +26,10 @@ class sonar_beam():
 
 
     def first_task(self) -> int:
-
         return self.algorithm(self.work_list)
 
 
     def second_task(self) -> int:
-
         sum_list = []
 
         # iterate through data list with 3 element window

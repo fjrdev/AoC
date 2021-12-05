@@ -11,8 +11,7 @@ class dive():
 
     def multHorDep(self) -> int:
 
-        horizontal_ctr = 0
-        depth_ctr = 0
+        horizontal_ctr = depth_ctr = 0
 
         for x in range(0, len(self.raw_data)):
             numb = int(re.findall("[0-9]+", self.raw_data[x])[0])
@@ -28,9 +27,7 @@ class dive():
 
     def useOfAim(self) -> int:
 
-        horizontal_aim_ctr = 0
-        depth_aim_ctr = 0
-        aim = 0
+        horizontal_aim_ctr = depth_aim_ctr = aim = 0
 
         for x in range(0, len(self.raw_data)):
             numb = int(re.findall("[0-9]+", self.raw_data[x])[0])
