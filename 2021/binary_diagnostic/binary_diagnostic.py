@@ -11,7 +11,6 @@ class BinaryDiagnostic():
 
 
   def getMostCommonElem(self, index_list) -> str:
-    
     one = zero = 0
 
     for x in range(0, len(index_list)):
@@ -26,7 +25,6 @@ class BinaryDiagnostic():
 
   # Algorithm for first task
   def multGamEps(self) -> int:
-    
     gamma = ""
 
     for x in range(0, 12):
@@ -40,7 +38,6 @@ class BinaryDiagnostic():
 
   # Algorithm for second task
   def shrinkList(self, mc: bool) -> str:
-
     wd_list = self.work_data
 
     for x in range(0, 12):
